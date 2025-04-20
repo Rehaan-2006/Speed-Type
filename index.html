@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">Speed Type</a>
+    <nav class="top-nav">
+      <div id="nav-auth">
+        <a href="login.html" class="nav-link">Login</a>
+        <a href="signup.html" class="nav-link">Sign Up</a>
+      </div>
+    
+      <div class="profile-tab hidden" id="nav-profile">
+        <span id="profile-username"></span>
+        <div class="profile-dropdown hidden" id="profile-dropdown">
+          <p><strong>USERNAME:</strong> <span id="profile-name"></span></p>
+          <p><strong>Typing Score:</strong> <span id="profile-typing"></span></p>
+          <p><strong>Word Score:</strong> <span id="profile-word"></span></p>
+          <button id="logoutBtn">Logout</button>
+        </div>
+      </div>
+    </nav>
+    
+  </header>
+
+  <main>
+    <h1>Choose a Game</h1>
+    <div class="game-cards">
+      <a href="typing.html" class="card-link">
+        <div class="card">
+          <img src="typing.png" alt="Typing Game" />
+          <h2>Typing Game</h2>
+          <p>Test your speed and accuracy with this fun typing challenge!</p>
+        </div>
+      </a>
+
+      <a href="word-guess.html" class="card-link">
+        <div class="card">
+          <img src="word.png" alt="Word Guessing Game" />
+          <h2>Word Guess</h2>
+          <p>Guess the right word before you run out of chances!</p>
+        </div>
+      </a>
+
+      <a href="leaderboard.html" class="card-link">
+        <div class="card">
+          <img src="leaderboard.png" alt="Leaderboard" />
+          <h2>Leaderboard</h2>
+          <p>Check out the leaderboard!</p>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Speed Type</p>
+  </footer>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+<script src="auth.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

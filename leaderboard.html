@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leaderboard</title>
+  <link rel="stylesheet" href="leaderboard.css" />
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">Speed Type</a>
+    <nav class="top-nav">
+      <div id="nav-auth">
+        <a href="login.html" class="nav-link">Login</a>
+        <a href="signup.html" class="nav-link">Sign Up</a>
+      </div>
+    
+      <div class="profile-tab hidden" id="nav-profile">
+        <span id="profile-username"></span>
+        <div class="profile-dropdown hidden" id="profile-dropdown">
+          <p><strong>USERNAME:</strong> <span id="profile-name"></span></p>
+          <p><strong>Typing Score:</strong> <span id="profile-typing"></span></p>
+          <p><strong>Word Score:</strong> <span id="profile-word"></span></p>
+          <button id="logoutBtn">Logout</button>
+        </div>
+      </div>
+    </nav>
+    
+  </header>
+  
+
+  <main>
+    <div class="leaderboard-container">
+      <div class="leaderboard-toggle">
+        <button id="typingBtn" class="active">Typing Game</button>
+        <button id="guessingBtn">Word Guessing Game</button>
+      </div>
+      <h2 id="leaderboard-title">Typing Game Leaderboard</h2>
+      <ul id="leaderboard-list"></ul>
+    </div>
+  </main>
+
+  <script src="auth.js"></script>
+  <script src="main.js"></script>
+  <script src="leaderboard.js"></script>
+</body>
+</html>

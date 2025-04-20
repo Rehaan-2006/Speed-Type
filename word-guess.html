@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Guess the Word!</title>
+    <link rel="stylesheet" href="word-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+          <a href="index.html" class="logo">Speed Type</a>
+        </div>
+      </header>
+    <main class="main-container">
+    <div class="wrapper">
+        <h1>Guess the Word</h1>
+
+        <div class="content">
+            <div class="top-bar">
+                <p class="timer">Time Left: <span>90</span>s</p>
+                <button class="start-btn">Start Game</button>
+            </div>
+
+            <input type="text" class="typing-input" maxlength="1">
+            <div class="inputs"></div>
+
+            <div class="details">
+                <p class="hint">Hint: <span></span></p>
+                <p class="guess-left">Remaining Guesses: <span>5</span></p>
+                <p class="wrong-letter">Wrong letters: <span></span></p>
+                <p class="score">Score: <span>0</span></p>
+            </div>
+
+            <button class="reset-btn">Reset Game</button>
+        </div>
+
+        <div class="popup correct-popup hidden"><p></p></div>
+        <div class="popup end-popup hidden"><p></p></div>
+    </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Speed Type</p>
+      </footer>
+      
+    <!-- Firebase App (core) -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+<!-- Firebase Authentication -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
+<!-- Firebase Firestore -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <script src="auth.js"></script>
+    <script src="word.js"></script>
+    <script src="word-script.js"></script>
+</body>
+</html>
