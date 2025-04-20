@@ -6,7 +6,7 @@
 
 ## 🔗 Live Demo
 
- https://rehaan-2006.github.io/Spped-Type/
+ https://rehaan-2006.github.io/Speed-Type/
 
 ---
 
