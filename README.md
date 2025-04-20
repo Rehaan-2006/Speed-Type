@@ -100,7 +100,7 @@
 
 ## 🧑‍💻 Author
 
-- Made by [Shaikh Mohd Rehaan]
+- Made by [Rehaan, Sadiq, Lakshmi Putra, and Hannan]
 
 ## 📄 License
 
