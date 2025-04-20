@@ -32,6 +32,8 @@
 
 ## 📂 File Structure
 
+**HTML Files**
+
 - **index.html** – Home page with game options and navigation
 
 - **login.html** – Login form for user authentication
@@ -44,7 +46,7 @@
 
 - **word-guess.html** – Game page for the Word Guessing Game
 
-JavaScript Files
+**JavaScript Files**
 
 - **main.js** – Handles profile dropdown and theme logic
 
@@ -56,7 +58,7 @@ JavaScript Files
 
 - **leaderboard.js** – Fetches and displays leaderboard data
 
-CSS Files
+**CSS Files**
 
 - **style.css** – Global styles shared across the website
 
