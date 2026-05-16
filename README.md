@@ -106,6 +106,3 @@
 
 - This project is open source and available under the MIT License.
 
----
-
-Let me know if you'd like help creating a GitHub repo, adding a logo, or setting up GitHub Pages to host it live!
